@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 
 RUN set -e \
     && apt-get update \
-    && apt-get install --no-install-recommends -y nginx git ca-certificates \
+    && apt-get install --no-install-recommends -y nginx git redis ca-certificates \
     && apt-get install --no-install-recommends -y \
     php php-curl php-fpm php-gd php-json php-mbstring php-sqlite3 php-xml \
     && apt-get autoremove --purge \
